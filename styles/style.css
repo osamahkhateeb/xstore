@@ -206,3 +206,25 @@ img {
     color: #d40a99;
     font-weight: bolder;
 }
+/* footer */
+.copy-right {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #303036;
+  }
+  
+  .copy-right-content {
+    text-align: center;
+  }
+  
+  .copy-right-content p {
+    margin-bottom: 0;
+    color: var(--blackColor);
+    font-weight: 600;
+  }
+  
+  .copy-right-content p a {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
