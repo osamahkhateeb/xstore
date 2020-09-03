@@ -105,7 +105,7 @@ img {
     margin-top: 15rem;
     z-index: 2;
 }
-.showcase-content h1{
+.showcase-content h1 {
     font-weight: 700;
     font-size: 5.2rem;
     line-height: 1.1;
@@ -140,20 +140,20 @@ img {
     transform: translate(-50%,-50%);
 }
 /* end of showcase */
-.container{
+.container {
     max-width: 1100px;
     margin:auto;
     overflow: auto;
     padding: 0 2rem;
 }
-.card{
+.card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     background: #f1f1f1;
     margin-bottom: 2rem;
 }
-.card h3{
+.card h3 {
     margin-bottom: 2rem;
 }
 .card img{
@@ -250,4 +250,62 @@ img {
     font-size: 18px;
     font-weight: bold;
     color: var(--primary-color);
+  }
+  @media(max-width: 960px) {
+      .showcase {
+          height: 90vh;
+      }
+      .showcase-top .logo {
+          top: 30%;
+          left: 35%;
+          transform: translate(0);
+          text-align: left;
+      }
+      .showcase-content h1 {
+          font-size: 3.2rem;
+          line-height: 1;
+      }
+      .showcase-content p {
+        visibility: hidden;
+    }
+   .demo a {
+       left: 45%;
+   }
+   .showcase::after {
+    box-shadow: inset 70px 70px 250px #000, inset -70px -70px 250px #000;
+   }
+   .container {
+       overflow: hidden;
+   }
+   .pricing ul li {
+   font-size: 1rem;
+}
+.pricing ul li span {
+    font-size: 1rem;
+}
+footer {
+    font-size: 0.8rem;
+}
+footer span {
+    font-size: 1rem;
+}
+  }
+  @media (max-width: 700px) {
+      .showcase-content {
+          text-align: center;
+          /* bottom: 30%; */
+      }
+      .showcase-content h1,span {
+          font-size: 2rem;
+          
+      }
+      .showcase-content p {
+          visibility: hidden;
+      }
+     .demo a {
+         left: 45%;
+     }
+     .showcase::after {
+        box-shadow: inset 70px 70px 250px #000, inset -70px -70px 250px #000;
+     }
   }
