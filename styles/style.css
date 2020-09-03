@@ -291,9 +291,7 @@ footer span {
 }
   }
   @media (max-width: 700px) { 
-      .showcase-content {
-          bottom: 10%;
-      }
+      
       .showcase-content h1,span {
           font-size: 2rem;
           
